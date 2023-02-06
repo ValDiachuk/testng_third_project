@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <test verbose="2" preserve-order="true" name="Few Functionalities">
+        <classes>
+            <class name="scripts.CarvanaHomeTest">
+                <methods>
+                    <include name="validateTitleAndURL"/>
+                    <include name="validateLogo"/>
+                    <include name="validateMainSelectionItems"/>
+                    <include name="validateSignInErrorMessage"/>
+                </methods>
+            </class>
+            <class name="scripts.CarvanaSearchCarTest">
+                <methods>
+                    <include name="validateSearchFilterOptionsAndSearchButton"/>
+                    <include name="validateSearchResultTiles"/>
+                </methods>
+            </class>
+        </classes>
+        </test>
+    </suite>
